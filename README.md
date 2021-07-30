@@ -31,5 +31,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## Developer
 
-- ll2343
+- lll2343
 - Char1sk
+
