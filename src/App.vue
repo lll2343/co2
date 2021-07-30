@@ -22,7 +22,7 @@
           </el-submenu>
           <el-submenu index="4">
             <template slot="title">用户服务</template>
-            <el-menu-item index="4-1">注册须知</el-menu-item>
+            <el-menu-item index="/zhucexuzhi">注册须知</el-menu-item>
             <el-menu-item index="/changjianwenti">常见问题</el-menu-item>
             <el-menu-item index="/dingzhikaifa">定制开发</el-menu-item>
           </el-submenu>

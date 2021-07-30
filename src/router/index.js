@@ -7,6 +7,7 @@ import changjianwenti from '@/components/changjianwenti'
 import login from '@/components/login'
 import register from '@/components/register'
 import shujuchanpin from '@/components/shujuchanpin'
+import zhucexuzhi from '@/components/zhucexuzhi'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/shujuchanpin',
       name: 'shujuchanpin',
       component: shujuchanpin
+    },
+    {
+      path: '/zhucexuzhi',
+      name: 'zhucexuzhi',
+      component: zhucexuzhi
     }
   ]
 })

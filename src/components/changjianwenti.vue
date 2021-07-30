@@ -3,7 +3,7 @@
     <div id="TCP2" class="main">
       <img class="img-context" src="./../../static/pic/finddata1.png" />
       <div class="page-context">
-        <div class="title-context">注册须知</div>
+        <div class="title-context">常见问题</div>
         <div>
           <div>
             <div class="little-title">1.关于浓度数据 ></div>
