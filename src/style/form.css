@@ -3,11 +3,10 @@ div {
   }
   
   .main-box {
-    margin: 0 auto;
-    margin-top: 60px;
+    /* margin: 0 auto;
+    margin-top: 60px; */
     border: solid #e9e9e9;
-    width: 60%;
-    height: 300px;
+    width: 50%;
   }
   
   .head {
@@ -15,6 +14,29 @@ div {
     justify-content: space-between;
     padding: 0 40px;
     border-bottom: solid #e9e9e9;
+  }
+  
+  .form {
+    margin-top: 50px;
+    margin-left: 100px;
+    /* display: flex;
+    display: -webkit-flex;
+    justify-content: space-evenly; */
+  }
+  
+  .form .el-input {
+    width: 80%;
+  }
+  
+  .form .buttonItem {
+    width: 80%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: left;
+  }
+  
+  .forgetPassword {
+    margin-left: 50%;
   }
   
   .logo,

@@ -22,22 +22,6 @@
             clearable
           ></el-input>
         </el-form-item>
-        <el-form-item label="密码" prop="password">
-          <el-input
-            v-model="form.password"
-            placeholder="请输入密码"
-            prefix-icon="el-icon-lock"
-            show-password
-          ></el-input>
-        </el-form-item>
-        <el-form-item label="重复密码" prop="password2">
-          <el-input
-            v-model="form.password2"
-            placeholder="请重复密码"
-            prefix-icon="el-icon-lock"
-            show-password
-          ></el-input>
-        </el-form-item>
         <el-form-item label="电话号码" prop="phoneNumber">
           <el-input
             v-model="form.phoneNumber"
@@ -56,7 +40,7 @@
         </el-form-item>
         <el-form-item>
           <div class="buttonItem">
-            <el-button type="primary" @click="submitForm('form')">注册</el-button>
+            <el-button type="primary" @click="submitForm('form')">提交</el-button>
             <el-button plain type="warning" @click="resetForm('form')">重置</el-button>
           </div>
         </el-form-item>
@@ -71,22 +55,6 @@ export default {
     let validateUsername = (rule, value, callback) => {
       if (!value) {
         callback(new Error('用户名不能为空'))
-      } else {
-        callback()
-      }
-    }
-    let validatePassword = (rule, value, callback) => {
-      if (!value) {
-        callback(new Error('密码不能为空'))
-      } else {
-        callback()
-      }
-    }
-    let validatePassword2 = (rule, value, callback) => {
-      if (!value) {
-        callback(new Error('密码不能为空'))
-      } else if (value !== this.form.password) {
-        callback(new Error('两次密码必须一致'))
       } else {
         callback()
       }
@@ -115,20 +83,12 @@ export default {
     return {
       form: {
         username: '',
-        password: '',
-        password2: '',
         phoneNumber: '',
         emailAddress: ''
       },
       rules: {
         username: [
           { validator: validateUsername, trigger: 'blur' }
-        ],
-        password: [
-          { validator: validatePassword, trigger: 'blur' }
-        ],
-        password2: [
-          { validator: validatePassword2, trigger: 'blur' }
         ],
         phoneNumber: [
           { validator: validatePhoneNumber, trigger: 'blur' }

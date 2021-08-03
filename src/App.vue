@@ -31,7 +31,9 @@
       </div>
     </div>
     <!-- 路由占位符 -->
-    <router-view />
+    <div class="routerOuter">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -87,5 +89,25 @@ export default {
   height: 60px;
   text-align: center;
   line-height: 60px;
+  /* background-color: red; */
+}
+
+.el-menu-demo {
+  background: -webkit-linear-gradient(
+    top,
+    white,
+    rgb(204, 255, 255),
+    rgb(153, 255, 255),
+    rgb(102, 255, 255),
+    rgb(51, 255, 255)
+  );
+}
+
+.routerOuter {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
 }
 </style>

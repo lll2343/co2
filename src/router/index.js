@@ -6,6 +6,7 @@ import home from '@/components/home'
 import changjianwenti from '@/components/changjianwenti'
 import login from '@/components/login'
 import register from '@/components/register'
+import passwordRefind from '@/components/passwordRefind'
 import shujuchanpin from '@/components/shujuchanpin'
 import zhucexuzhi from '@/components/zhucexuzhi'
 
@@ -13,6 +14,10 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      redirect: '/home'
+    },
     {
       path: '/home',
       name: 'home',
@@ -42,6 +47,11 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: register
+    },
+    {
+      path: '/passwordRefind',
+      name: 'passwordRefind',
+      component: passwordRefind
     },
     {
       path: '/shujuchanpin',
