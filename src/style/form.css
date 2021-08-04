@@ -5,6 +5,8 @@ div {
   .main-box {
     /* margin: 0 auto;
     margin-top: 60px; */
+    margin-left: 25%;
+    margin-top: 5%;
     border: solid #e9e9e9;
     width: 50%;
   }
@@ -28,15 +30,15 @@ div {
     width: 80%;
   }
   
-  .form .buttonItem {
+  /* .form .buttonItem {
     width: 80%;
     display: flex;
     display: -webkit-flex;
     justify-content: left;
-  }
+  } */
   
   .forgetPassword {
-    margin-left: 50%;
+    margin-left: 40%;
   }
   
   .logo,

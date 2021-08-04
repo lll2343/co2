@@ -103,11 +103,11 @@ export default {
   );
 }
 
-.routerOuter {
+/* .routerOuter {
     display: flex;
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
-}
+    height: 700px;
+} */
 </style>

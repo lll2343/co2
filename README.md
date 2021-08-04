@@ -1,35 +1,19 @@
-# co2
+# 项目开发文档
 
-> A Vue.js project
+> 运行方式、各部分内容概括
 
-## Build Setup
+## 本地运行方式
 
-``` bash
-# install dependencies
-npm install
+1. 进入本项目的[github链接](https://github.com/lll2343/co2)
+2. 打开命令行终端，将本项目使用git clone至本地
+3. 进入项目文件夹，运行 npm i 安装必要组件
+4. 安装完成后，运行 npm run dev，进入生成的网址即可
 
-# serve with hot reload at localhost:8080
-npm run dev
+## 各部分完成情况
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-## Developer
-
-- lll2343
-- Char1sk
+- 已完成vue框架的重构，实现本地的页面跳转
+- 已完成上方导航栏的设计和整体风格
+- 已完成除主页以外的布局设计
+- 已完成登录、注册、密码找回的本地检验
+- 未完成主页的地图部分（）
+- 未完成登录、注册、密码的服务器通讯
